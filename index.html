@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOKO Académie Football - Niamey-Niger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+           <div class="logo-area">
+                <a href="index.html">
+                    <div class="site-logo-img">
+                        <img src="images/logo.jpg" alt="SOKO Académie Football">
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="academie.html">L'Académie</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+					<li><a href="index.html#galerie">Galerie</a></li>
+                    <li><a href="index.html#equipes">Équipes</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="inscription.html" class="btn-subscribe">S'inscrire</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section / Active Slider Banner -->
+    <section class="hero-slider-section" id="accueil">
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(11, 28, 61, 0.65), rgba(11, 28, 61, 0.65)), url('images/slide1.jpg');">
+                <div class="container hero-content">
+                    <div class="subtitle-tag">DEPUIS 2014 • NIAMEY-NIGER</div>
+                    <h1>SOKO ACADÉMIE FOOTBALL</h1>
+                    <p class="location">Niamey-Niger</p>
+                    <p class="tagline">Formons les champions de demain avec discipline, engagement et performance</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="inscription.html" class="btn btn-primary">Recrutement Ouvert <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="contact.html" class="btn btn-outline">Contactez-nous</a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <span class="badge-item"><i class="fa-solid fa-circle-check"></i> Discipline</span>
+                        <span class="badge-item"><i class="fa-solid fa-bullseye"></i> Engagement</span>
+                        <span class="badge-item"><i class="fa-solid fa-trophy"></i> Performance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide" style="background-image: linear-gradient(rgba(11, 28, 61, 0.65), rgba(11, 28, 61, 0.65)), url('images/slide2.jpg');">
+                <div class="container hero-content">
+                    <div class="subtitle-tag">EXCELLENCE & FORMATION</div>
+                    <h1>NOS ÉQUIPES ET TALENTS</h1>
+                    <p class="location">Infrastructures Professionnelles</p>
+                    <p class="tagline">Un parcours complet pour les jeunes talents de 8 à 18 ans</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="inscription.html" class="btn btn-primary">S'inscrire en Ligne <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="contact.html" class="btn btn-outline">Nous Joindre</a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <span class="badge-item"><i class="fa-solid fa-user-graduate"></i> Coachs Diplômés</span>
+                        <span class="badge-item"><i class="fa-solid fa-futbol"></i> Entraînements Quotidiens</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Controls -->
+        <button class="slider-btn prev-btn" id="prevSlide" aria-label="Slide précédente"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn next-btn" id="nextSlide" aria-label="Slide suivante"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+        </div>
+    </section>
+
+    <!-- Formations Teaser Section -->
+    <section class="formations-section" id="formation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nos Formations & Programmes</h2>
+                <p>Un parcours complet pour les jeunes talents de 8 à 18 ans ancré dans les réalités du football nigérien</p>
+            </div>
+
+            <div class="formations-grid">
+                <!-- Card 1 -->
+                <div class="formation-card card-red">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-futbol"></i>
+                    </div>
+                    <h3>Perfectionnement Technique</h3>
+                    <p>Contrôles orientés, passes, conduite de balle et précision des tirs pour développer la maîtrise individuelle.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="formation-card card-blue">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-chess-board"></i>
+                    </div>
+                    <h3>Rigueur Tactique</h3>
+                    <p>Animation du jeu, placement, lecture des phases de match et discipline collective sur le terrain.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="formation-card card-orange">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+                    <h3>Préparation Physique</h3>
+                    <p>Endurance, explosivité et hygiène de vie adaptées aux exigences athlétiques du haut niveau.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="formation.html" class="btn btn-primary">Découvrir le programme complet de formation <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+	<!-- Section Mot de Bienvenue du Président -->
+    <section class="president-welcome-section" id="president">
+        <div class="container">
+            <div class="president-container">
+                <!-- Colonne de l'image du président -->
+                <div class="president-image-wrapper">
+                    <img src="images/president.jpg" alt="Mr Maliki Amadou Djibo - Président de Soko Académie" class="president-photo" loading="lazy">
+                    <div class="president-badge">Président Fondateur</div>
+                </div>
+
+                <!-- Colonne du texte -->
+                <div class="president-content">
+                    <h2>Mot du Président</h2>
+                    <div class="president-subtitle">Bienvenue à Soko Académie Football</div>
+                    
+                    <p class="president-text">
+                        Chers parents, chers jeunes talents, passionnés de football et partenaires, c’est avec un immense plaisir et une grande fierté que je vous souhaite la bienvenue officielle au sein de <strong>Soko Académie Football</strong>.
+                    </p>
+                    
+                    <p class="president-text">
+                        Depuis notre création à Niamey, notre vision a toujours été claire : offrir un cadre d'excellence structuré où la jeunesse nigérienne peut s'épanouir à la fois sur le plan sportif, éducatif et humain. Grâce à notre triptyque fondateurs — <strong>Discipline, Engagement et Performance</strong> — nous formons bien plus que de simples joueurs : nous façonnons les citoyens et les champions de demain.
+                    </p>
+
+                    <p class="president-text">
+                        Ensemble, avec notre encadrement technique diplômé et nos partenaires dévoués, continuons de porter haut les couleurs de notre académie et d'accompagner nos talents vers les sommets.
+                    </p>
+
+                    <div class="president-signature">
+                        <h4>Mr. Maliki Amadou Djibo</h4>
+                        <p>Président de Soko Académie Football</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Actualités Football (International, CAF & Nigérien) -->
+    <section class="news-feed-section" id="actualites">
+        <div class="container">
+            <div class="section-header">
+                <h2>Actualités du Football</h2>
+                <p>Restez informés des dernières actualités de l'UEFA, de la CAF et du football nigérien</p>
+            </div>
+
+            <div class="news-grid">
+                <!-- Article 1 -->
+                <article class="news-card">
+                    <div class="news-img-container">
+                        <img src="images/slide1..jpg" alt="Actualité CAF" loading="lazy">
+                        <span class="news-badge badge-caf">CAF / Afrique</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> Novembre 2026</div>
+                        <h3>Compétitions Africaines : Le point sur les phases de groupes et les ambitions des sélections</h3>
+                        <p>Retrouvez l'actualité des grands rendez-vous du football africain, des éliminatoires et des performances sur le continent.</p>
+                        <a href="https://www.cafonline.com/fr/news/" target="_blank" class="read-more">Lire sur CAF Online <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="news-card">
+                    <div class="news-img-container">
+                        <img src="images/897811211_122145379659028346_7684049095105859329_n_2.jpg" alt="Football au Niger" loading="lazy">
+                        <span class="news-badge badge-niger">Football Nigérien</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> Actualité Locale</div>
+                        <h3>Les Ménas du Niger et la dynamique de formation des jeunes talents à Niamey</h3>
+                        <p>Focus sur l'évolution du football nigérien, l'engagement de la jeunesse et les perspectives de développement sportif.</p>
+                        <a href="contact.html" class="read-more">En savoir plus <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="news-card">
+                    <div class="news-img-container">
+                        <img src="images/slide2.jpg" alt="Actualité UEFA" loading="lazy">
+                        <span class="news-badge badge-uefa">UEFA / International</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date"><i class="fa-regular fa-calendar"></i> Europe & Monde</div>
+                        <h3>Tendances tactiques et performances en Ligue des Champions UEFA</h3>
+                        <p>Analysez les styles de jeu et les performances des plus grands clubs et joueurs à travers l'Europe.</p>
+                        <a href="https://fr.uefa.com/news-media/" target="_blank" class="read-more">Lire sur UEFA.com <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+<!-- Section Galerie Photo avec Sous-onglets par Catégorie -->
+    <section class="gallery-section" id="galerie">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie Photo & Catégories</h2>
+                <p>Explorez les moments forts de nos différentes équipes, des jeunes pousses aux seniors</p>
+            </div>
+
+            <!-- Sous-onglets / Filtres par Catégorie -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">Toutes les photos</button>
+                <button class="filter-btn" data-filter="u10">U10</button>
+                <button class="filter-btn" data-filter="u13">U13</button>
+                <button class="filter-btn" data-filter="u15">U15</button>
+                <button class="filter-btn" data-filter="u17">U17</button>
+                <button class="filter-btn" data-filter="senior-homme">Senior Homme</button>
+                <button class="filter-btn" data-filter="senior-femme">Senior Femme</button>
+            </div>
+
+            <!-- Grille de Photos -->
+            <div class="gallery-grid">
+                
+                <!-- ================= CATEGORIE U17 ================= -->
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.16 (1).jpeg" alt="Photo officielle équipe U17" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Photo d'équipe officielle</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.15 (2).jpeg" alt="Joueur U17 sur la pelouse" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Concentration & Attitude</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.15.jpeg" alt="Joueur U17 balle au pied" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Conduite de balle</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.16.jpeg" alt="Joueur U17 #14" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Détermination sur le terrain</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.17 (1).jpeg" alt="Duel en match U17" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Duel & Engagement</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u17">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.54.17.jpeg" alt="Joueur U17 #3 devant le banc" loading="lazy">
+                    <div class="gallery-overlay"><span>U17 — Action devant le banc</span></div>
+                </div>
+
+                <!-- ================= CATEGORIE U15 ================= -->
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.41 (2).jpeg" alt="Photo officielle équipe U15" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Photo d'équipe officielle</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.41 (1).jpeg" alt="Célébration joueur U15 #7" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Joie & Célébration</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.42 (1).jpeg" alt="Action de jeu U15" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Maîtrise technique</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.42 (2).jpeg" alt="Complicité joueurs U15" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Cohésion & Esprit d'équipe</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.42.jpeg" alt="Joueur U15 en course" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Vitesse & Engagement</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u15">
+                    <img src="images/WhatsApp Image 2026-11-19 at 14.50.44.jpeg" alt="Gardien de but U15" loading="lazy">
+                    <div class="gallery-overlay"><span>U15 — Gardien de but</span></div>
+                </div>
+
+                <!-- ================= SENIOR FEMME ================= -->
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.02.jpeg" alt="Équipe Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Esprit d'équipe</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.03 (1).jpeg" alt="Entraînement Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Séance technique</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.03 (2).jpeg" alt="Exercices physiques Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Préparation physique</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.03.jpeg" alt="Action de jeu Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Intensité en match</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.04 (1).jpeg" alt="Photo d'équipe officielle Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Photo d'équipe officielle</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.04.jpeg" alt="Joueuse #10 Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Concentration</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.07.jpeg" alt="Rassemblement d'équipe Senior Femme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Cohésion de groupe</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-femme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.09.jpeg" alt="Joueuses à l'écoute des consignes" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Femme — Consignes tactiques</span></div>
+                </div>
+
+                <!-- ================= CATEGORIE U13 ================= -->
+                <div class="gallery-item" data-category="u13">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.28.jpeg" alt="Joie collective U13 Soko" loading="lazy">
+                    <div class="gallery-overlay"><span>U13 — Joie & Esprit d'équipe</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u13">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.10.jpeg" alt="U13 en tenue bleue" loading="lazy">
+                    <div class="gallery-overlay"><span>U13 — Concentration sur le terrain</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u13">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.11 (1).jpeg" alt="U13 en déplacement sur la pelouse" loading="lazy">
+                    <div class="gallery-overlay"><span>U13 — Dynamique de groupe</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u13">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.11 (2).jpeg" alt="Photo officielle U13 avec encadrement" loading="lazy">
+                    <div class="gallery-overlay"><span>U13 — Photo d'équipe officielle</span></div>
+                </div>
+
+                <!-- ================= CATEGORIE U10 ================= -->
+                <div class="gallery-item" data-category="u10">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.11.jpeg" alt="Équipe U10 Soko Académie" loading="lazy">
+                    <div class="gallery-overlay"><span>U10 — Photo d'équipe officielle</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u10">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.12.jpeg" alt="U10 au repos sur le terrain" loading="lazy">
+                    <div class="gallery-overlay"><span>U10 — Esprit de groupe & encadrement</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u10">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.13 (1).jpeg" alt="U10 pose de l'équipe" loading="lazy">
+                    <div class="gallery-overlay"><span>U10 — Jeunes talents prêts</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u10">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.13 (2).jpeg" alt="U10 bras croisés" loading="lazy">
+                    <div class="gallery-overlay"><span>U10 — Détermination</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="u10">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.15.13.jpeg" alt="U10 alignement avant entraînement" loading="lazy">
+                    <div class="gallery-overlay"><span>U10 — Discipline & Rigueur</span></div>
+                </div>
+
+                <!-- ================= SENIOR HOMME ================= -->
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.09.59.jpeg" alt="Match Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Duel en match</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.01.jpeg" alt="Joueur Senior Homme #19" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — En action</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.03.jpeg" alt="Milieu de terrain Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Intensité</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.05.jpeg" alt="Gardien Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Gardien de but</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.07.jpeg" alt="Frappe Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Frappe au but</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.08.jpeg" alt="Capitaines et arbitres" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Avant-match</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.09.jpeg" alt="Duel aérien Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Duel aérien</span></div>
+                </div>
+
+                <div class="gallery-item" data-category="senior-homme">
+                    <img src="images/WhatsApp Image 2026-11-18 at 15.10.10.jpeg" alt="Équipe Senior Homme" loading="lazy">
+                    <div class="gallery-overlay"><span>Senior Homme — Photo d'équipe</span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+	<!-- Section Bande Passante / Ticker style Transfermarkt -->
+<div class="transfer-ticker-section">
+    <div class="ticker-wrapper">
+        <div class="ticker-move">
+            <!-- Bloc 1 -->
+            <div class="ticker-item">
+                <span class="ticker-tag">Rumeur</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Super League : Un jeune talent ciblé par les grands clubs européens</a>
+            </div>
+            <!-- Bloc 2 -->
+            <div class="ticker-item">
+                <span class="ticker-tag">Officiel</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Mercato : Prolongation de contrat officialisée pour la saison en cours</a>
+            </div>
+            <!-- Bloc 3 -->
+            <div class="ticker-item">
+                <span class="ticker-tag">Valeur marchande</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Mise à jour des valeurs : Les plus fortes hausses du mois</a>
+            </div>
+            <!-- Bloc 4 -->
+            <div class="ticker-item">
+                <span class="ticker-tag">Exclusivité</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Soko Académie : Suivi des performances et passerelles professionnelles</a>
+            </div>
+
+            <!-- Duplication des blocs pour assurer la boucle infinie fluide -->
+            <div class="ticker-item">
+                <span class="ticker-tag">Rumeur</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Super League : Un jeune talent ciblé par les grands clubs européens</a>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-tag">Officiel</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Mercato : Prolongation de contrat officialisée pour la saison en cours</a>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-tag">Valeur marchande</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Mise à jour des valeurs : Les plus fortes hausses du mois</a>
+            </div>
+            <div class="ticker-item">
+                <span class="ticker-tag">Exclusivité</span>
+                <a href="https://www.transfermarkt.com" target="_blank">Soko Académie : Suivi des performances et passerelles professionnelles</a>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- Section Médias & Vidéos (YouTube & Instagram) -->
+<section class="media-videos-section" id="videos">
+    <div class="container">
+        <div class="section-header">
+            <h2>Soko TV — Nos Vidéos & Réseaux</h2>
+            <p>Plongez au cœur de l'académie : découvrez nos séances d'entraînement, nos matchs et nos reels Instagram</p>
+        </div>
+
+        <div class="media-grid">
+            <!-- Colonne YouTube -->
+            <div class="media-column">
+                <div class="platform-header youtube-header">
+                    <i class="fa-brands fa-youtube"></i>
+                    <span>Chaîne YouTube Officielle</span>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <!-- Remplacez 'VIDEO_ID_1' par l'identifiant de votre vidéo YouTube -->
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Soko Académie YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Séance d'entraînement et opposition des jeunes talents à Niamey</h3>
+                        <p>Immersion au cœur de notre centre de formation avec nos éducateurs diplômés.</p>
+                    </div>
+                </div>
+
+                <div class="platform-cta">
+                    <a href="https://www.youtube.com/@votre_chaine_youtube" target="_blank" class="btn btn-youtube">
+                        <i class="fa-brands fa-youtube"></i> S'abonner sur YouTube
+                    </a>
+                </div>
+            </div>
+
+            <!-- Colonne Instagram -->
+            <div class="media-column">
+                <div class="platform-header instagram-header">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram / Reels</span>
+                </div>
+
+                <div class="instagram-embed-card">
+                    <!-- Option 1 : Intégration d'un post/reel Instagram officiel (Remplacez l'URL par votre lien de publication) -->
+                    <div class="instagram-placeholder">
+                        <i class="fa-brands fa-instagram ig-icon"></i>
+                        <h3>Suivez nos Stories & Reels en direct</h3>
+                        <p>Découvrez les coulisses, les moments forts et la vie quotidienne de l'académie sur notre compte Instagram.</p>
+                        <a href="https://www.instagram.com/@sokoacademie/" target="sokoacademie" class="btn btn-instagram">
+                            <i class="fa-brands fa-instagram"></i> Voir sur Instagram
+                        </a>
+                    </div>
+                </div>
+
+                <div class="platform-cta">
+                    <a href="https://www.instagram.com/votre_compte_instagram" target="_blank" class="btn btn-instagram">
+                        <i class="fa-brands fa-instagram"></i> Suivre @SokoAcademie
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sponsor Logo Scroller Ticker (Placed right above the footer) -->
+    <section class="sponsor-ticker-section">
+        <div class="container">
+            <h3 class="sponsor-ticker-title">Nos Partenaires & Sponsors Officiels</h3>
+        </div>
+        <div class="ticker-container">
+            <div class="ticker-track">
+                <!-- Set 1 -->
+                <div class="sponsor-logo-box">
+                    <img src="images/sponsor_cnss.jpg" alt="CNSS Niger">
+                </div>
+                <div class="sponsor-logo-box">
+                    <img src="images/sponsor_morey.jpg" alt="Morey BTP Hydraulique">
+                </div>
+               
+                <div class="sponsor-logo-box">
+                    <img src="images/logo.jpg" alt="Soko Academie Football">
+                </div>
+                <!-- Set 2 (Duplicated for smooth infinite loop) -->
+                <div class="sponsor-logo-box">
+                    <img src="images/sponsor_cnss.jpg" alt="CNSS Niger">
+                </div>
+                <div class="sponsor-logo-box">
+                    <img src="images/sponsor_morey.jpg" alt="Morey BTP Hydraulique">
+                </div>
+               
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+           <div class="footer-col footer-brand">
+                <div class="site-logo-img footer-logo">
+                    <img src="images/logo.jpg" alt="SOKO Académie Football">
+                </div>
+                <h3>SOKO ACADÉMIE FOOTBALL</h3>
+                <p>Former les champions de demain au Niger depuis 2014. Excellence, discipline et engagement au cœur de notre projet.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html#academie"><i class="fa-solid fa-angle-right"></i> L'Académie</a></li>
+                    <li><a href="formation.html"><i class="fa-solid fa-angle-right"></i> Formation</a></li>
+                    <li><a href="inscription.html"><i class="fa-solid fa-angle-right"></i> Inscription</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Niamey-Niger<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centre de Formation SOKO</li>
+                    <li><i class="fa-solid fa-phone"></i> +227 88-37-56-80<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+227 88-98-80-80</li>
+                    <li><i class="fa-solid fa-envelope"></i> sokoacademieofficiel@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container copyright-flex">
+                <p>&copy; 2024 SOKO ACADÉMIE FOOTBALL – Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <span>|</span>
+                    <a href="#">Politique de confidentialité</a>
+					 <span>|</span>
+					<a href="#">Dessign By Jackou</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+<script>
+    // Script pour filtrer la galerie par catégorie
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Retirer la classe active de tous les boutons et l'ajouter au cliqué
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            galleryItems.index = 0;
+            galleryItems.forEach(item => {
+                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+</html>

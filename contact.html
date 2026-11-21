@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SOKO Académie Football</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+             <div class="logo-area">
+                <a href="index.html">
+                    <div class="site-logo-img">
+                        <img src="images/logo.jpg" alt="SOKO Académie Football">
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="academie.html">L'Académie</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="inscription.html" class="btn-subscribe">S'inscrire</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="page-banner">
+        <div class="container text-center">
+            <h1>Contactez-Nous</h1>
+            <p>Une question, un partenariat ou une inscription ? Notre équipe est à votre écoute.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Informations de Contact -->
+                <div class="contact-info-card">
+                    <h3>Informations Officielles</h3>
+                    <p>N'hésitez pas à nous joindre directement via nos numéros de téléphone ou par email pour toute information complémentaire.</p>
+                    
+                    <ul class="contact-details-list">
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <strong>Adresse</strong>
+                                <span>Niamey-Niger — Centre de Formation SOKO</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <strong>Téléphones / WhatsApp</strong>
+                                <span><a href="tel:+22788375680">+227 88-37-56-80</a></span><br>
+                                <span><a href="tel:+22788988080">+227 88-98-80-80</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <strong>Email Officiel</strong>
+                                <span><a href="mailto:sokoacademieofficiel@gmail.com">sokoacademieofficiel@gmail.com</a></span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact-icon-box"><i class="fa-solid fa-clock"></i></div>
+                            <div>
+                                <strong>Horaires du Bureau</strong>
+                                <span>Lundi au Samedi : 08h00 - 18h00</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="contact-socials">
+                        <h4>Suivez-nous sur les réseaux</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire de Message -->
+                <div class="contact-form-card">
+                    <div class="form-header text-left">
+                        <h2>Envoyez-nous un message</h2>
+                        <p>Remplissez ce formulaire et notre secrétariat vous répondra dans les plus brefs délais.</p>
+                    </div>
+
+                    <form id="contactForm" class="pro-form">
+                        <div class="form-group">
+                            <label for="contact_nom">Nom complet <span class="required">*</span></label>
+                            <input type="text" id="contact_nom" name="contact_nom" required placeholder="Ex : Mamane Sani">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact_tel">Téléphone <span class="required">*</span></label>
+                                <input type="tel" id="contact_tel" name="contact_tel" required placeholder="Ex : +227 88 37 56 80">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact_email">Email</label>
+                                <input type="email" id="contact_email" name="contact_email" placeholder="Ex : mamane@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_sujet">Sujet <span class="required">*</span></label>
+                            <input type="text" id="contact_sujet" name="contact_sujet" required placeholder="Ex : Renseignements entraînements / Partenariat">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contact_message">Message <span class="required">*</span></label>
+                            <textarea id="contact_message" name="contact_message" rows="5" required placeholder="Écrivez votre message ici..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
+
+                        <div id="contactSuccessMessage" class="success-message" style="display: none;">
+                            <i class="fa-solid fa-circle-check"></i> Votre message a bien été envoyé ! Nous vous contacterons très bientôt.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+            <div class="footer-col footer-brand">
+                <div class="site-logo-img footer-logo">
+                    <img src="images/logo.jpg" alt="SOKO Académie Football">
+                </div>
+                <h3>SOKO ACADÉMIE FOOTBALL</h3>
+                <p>Former les champions de demain au Niger depuis 2014. Excellence, discipline et engagement au cœur de notre projet.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html#academie"><i class="fa-solid fa-angle-right"></i> L'Académie</a></li>
+                    <li><a href="formation.html"><i class="fa-solid fa-angle-right"></i> Formation</a></li>
+                    <li><a href="inscription.html"><i class="fa-solid fa-angle-right"></i> Inscription</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Niamey-Niger<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centre de Formation SOKO</li>
+                    <li><i class="fa-solid fa-phone"></i> +227 88-37-56-80<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+227 88-98-80-80</li>
+                    <li><i class="fa-solid fa-envelope"></i> sokoacademieofficiel@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container copyright-flex">
+                <p>&copy; 2024 SOKO ACADÉMIE FOOTBALL – Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <span>|</span>
+                    <a href="#">Politique de confidentialité</a>
+					 <span>|</span>
+					<a href="#">Dessign By Jackou</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

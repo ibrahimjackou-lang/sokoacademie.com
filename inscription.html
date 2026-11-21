@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - SOKO Académie Football</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <div class="site-logo-img">
+                        <img src="images/logo.jpg" alt="SOKO Académie Football">
+                    </div>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="academie.html">L'Académie</a></li>
+                    <li><a href="formation.html">Formation</a></li>
+                    <li><a href="index.html#equipes">Équipes</a></li>
+                    <li><a href="inscription.html" class="active">Inscription</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a href="inscription.html" class="btn-subscribe">S'inscrire</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header Banner -->
+    <section class="page-banner">
+        <div class="container text-center">
+            <h1>Recrutement & Inscription</h1>
+            <p>Rejoignez SOKO Académie Football et donnez vie à votre passion</p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-header">
+                    <h2>Formulaire de Candidature Joueur</h2>
+                    <p>Veuillez remplir soigneusement les informations ci-dessous. Les champs marqués d'une astérisque (*) sont obligatoires.</p>
+                </div>
+
+                <form id="registrationForm" class="pro-form">
+                    
+                    <!-- Étape 1 : Informations Personnelles -->
+                    <fieldset class="form-fieldset">
+                        <legend><i class="fa-solid fa-user"></i> 1. Informations du Joueur</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom <span class="required">*</span></label>
+                                <input type="text" id="nom" name="nom" required placeholder="Ex : Diallo">
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom <span class="required">*</span></label>
+                                <input type="text" id="prenom" name="prenom" required placeholder="Ex : Ibrahim">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date_naissance">Date de naissance <span class="required">*</span></label>
+                                <input type="date" id="date_naissance" name="date_naissance" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lieu_naissance">Lieu de naissance <span class="required">*</span></label>
+                                <input type="text" id="lieu_naissance" name="lieu_naissance" required placeholder="Ex : Niamey">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telephone">Téléphone du Joueur / WhatsApp</label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="Ex : +227 90 00 00 00">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Adresse Email</label>
+                                <input type="email" id="email" name="email" placeholder="Ex : ibrahim@email.com">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Étape 2 : Profil Sportif -->
+                    <fieldset class="form-fieldset">
+                        <legend><i class="fa-solid fa-futbol"></i> 2. Profil Sportif</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tranche_age">Catégorie / Tranche d'âge <span class="required">*</span></label>
+                                <select id="tranche_age" name="tranche_age" required>
+                                    <option value="">Sélectionnez votre catégorie</option>
+                                    <option value="U8-U10">U8 - U10 (8 à 10 ans)</option>
+                                    <option value="U11-U13">U11 - U13 (11 à 13 ans)</option>
+                                    <option value="U14-U16">U14 - U16 (14 à 16 ans)</option>
+                                    <option value="U17-U18">U17 - U18 (17 à 18 ans)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="poste">Poste préférentiel <span class="required">*</span></label>
+                                <select id="poste" name="poste" required>
+                                    <option value="">Sélectionnez le poste</option>
+                                    <option value="Gardien">Gardien de but</option>
+                                    <option value="Défenseur">Défenseur (Central / Latéral)</option>
+                                    <option value="Milieu">Milieu de terrain</option>
+                                    <option value="Attaquant">Attaquant / Ailier</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="pied_fort">Pied fort <span class="required">*</span></label>
+                                <select id="pied_fort" name="pied_fort" required>
+                                    <option value="">Sélectionnez</option>
+                                    <option value="Droit">Droit</option>
+                                    <option value="Gauche">Gauche</option>
+                                    <option value="Des deux">Des deux (Ambidextre)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="experience">Anciens clubs ou Académie (si applicable)</label>
+                                <input type="text" id="experience" name="experience" placeholder="Ex : AS Douanes, Quartier, etc.">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Étape 3 : Responsable / Parent -->
+                    <fieldset class="form-fieldset">
+                        <legend><i class="fa-solid fa-users"></i> 3. Contact du Parent ou Tuteur Légal</legend>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom_parent">Nom et Prénom du Tuteur <span class="required">*</span></label>
+                                <input type="text" id="nom_parent" name="nom_parent" required placeholder="Ex : M. Oumarou Diallo">
+                            </div>
+                            <div class="form-group">
+                                <label for="lien_parente">Lien de parenté <span class="required">*</span></label>
+                                <input type="text" id="lien_parente" name="lien_parente" required placeholder="Ex : Père, Mère, Tuteur">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telephone_parent">Téléphone du Tuteur <span class="required">*</span></label>
+                                <input type="tel" id="telephone_parent" name="telephone_parent" required placeholder="Ex : +227 96 00 00 00">
+                            </div>
+                            <div class="form-group">
+                                <label for="quartier">Quartier de résidence à Niamey <span class="required">*</span></label>
+                                <input type="text" id="quartier" name="quartier" required placeholder="Ex : Plateau, Dar es Salam, Yantala">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <!-- Validation & Soumission -->
+                    <div class="form-submit-area">
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="conditions" name="conditions" required>
+                            <label for="conditions">Je certifie l'exactitude des informations fournies et j'accepte le règlement intérieur et la politique de l'académie SOKO. <span class="required">*</span></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">Soumettre ma candidature <i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+
+                    <div id="formSuccessMessage" class="success-message" style="display: none;">
+                        <i class="fa-solid fa-circle-check"></i> Votre candidature a été transmise avec succès ! L'équipe de SOKO Académie Football vous contactera très prochainement.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" id="contact">
+        <div class="container footer-grid">
+           <div class="footer-col footer-brand">
+                <div class="site-logo-img footer-logo">
+                    <img src="images/logo.jpg" alt="SOKO Académie Football">
+                </div>
+                <h3>SOKO ACADÉMIE FOOTBALL</h3>
+                <p>Former les champions de demain au Niger depuis 2014. Excellence, discipline et engagement au cœur de notre projet.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="index.html#academie"><i class="fa-solid fa-angle-right"></i> L'Académie</a></li>
+                    <li><a href="formation.html"><i class="fa-solid fa-angle-right"></i> Formation</a></li>
+                    <li><a href="inscription.html"><i class="fa-solid fa-angle-right"></i> Inscription</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-right"></i> Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> Niamey-Niger<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Centre de Formation SOKO</li>
+                    <li><i class="fa-solid fa-phone"></i> +227 88-37-56-80<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+227 88-98-80-80</li>
+                    <li><i class="fa-solid fa-envelope"></i> sokoacademieofficiel@gmail.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Suivez-nous</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container copyright-flex">
+                <p>&copy; 2024 SOKO ACADÉMIE FOOTBALL – Tous droits réservés.</p>
+                <div class="footer-links">
+                    <a href="#">Mentions légales</a>
+                    <span>|</span>
+                    <a href="#">Politique de confidentialité</a>
+					 <span>|</span>
+					<a href="#">Dessign By Jackou</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
